@@ -49,4 +49,4 @@ they bring something new to the table.
 
 ![AdminProfile](https://github.com/BasheerMohamed/ZenChat/assets/143797410/a576d181-5704-47cf-9f11-0ade00f586cb)
 
-![ChatBot](https://github.com/BasheerMohamed/ZenChat/assets/143797410/280fe49d-cc07-4918-853f-2032b3692db1)
+![ChatBot](https://github.com/BasheerMohamed/ZenChat/assets/143797410/78949133-0e2e-4a06-b691-8297a3132553)
