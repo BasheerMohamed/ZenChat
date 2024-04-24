@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FA1100</color>
+    <color name="green">#4CAF50</color>
+    <color name="sea">#2C977D</color>
+    <color name="seaMist">#B8DBD3</color>
+    <color name="spicyPink">#777373</color>
+    <color name="gray">#A3A2A2</color>
+    <color name="offGreen">#E8F7F0</color>
+    <color name="blue">#0000EE</color>
+    <color name="lightBlue">#ADD8E6</color>
+</resources>

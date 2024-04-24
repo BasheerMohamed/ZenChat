@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.startup.WelcomeScreenActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/exo_2_medium"
+        android:text="@string/welcome_text"
+        android:textColor="@color/sea"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/coverImage"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_220sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:src="@drawable/whatsapp_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/coverImage"
+        app:layout_constraintStart_toStartOf="@+id/coverImage"
+        app:layout_constraintTop_toBottomOf="@+id/coverImage"
+        android:layout_marginTop="@dimen/_50sdp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/read_our"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:textColor="@color/spicyPink"
+            android:fontFamily="@font/lexend_deca"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:text="@string/privacy_policy"
+            android:textStyle="bold"
+            android:fontFamily="@font/lexend_deca"
+            android:textColor="@color/sea"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sample_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_deca"
+        android:text='@string/tap_agree_and_continue_to_accept_the'
+        android:textColor="@color/spicyPink"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/sample_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/terms_of_service"
+        android:textColor="@color/sea"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="@+id/sample_text1"
+        app:layout_constraintStart_toStartOf="@+id/sample_text1"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text1" />
+
+    <Button
+        android:id="@+id/agreeButton"
+        android:layout_width="@dimen/_265sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:backgroundTint="@color/sea"
+        android:fontFamily="@font/lexend_exa"
+        android:text="@string/agree_and_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

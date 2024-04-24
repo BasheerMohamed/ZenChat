@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.startup.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/zenchat"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_200sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:text="@string/zenChat"
+        android:textColor="@color/sea"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/appLogo"
+        app:layout_constraintStart_toStartOf="@+id/appLogo"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

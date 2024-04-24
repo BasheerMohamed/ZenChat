@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activities.main.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/sea"
+        app:title="ZenChat"
+        app:titleTextColor="@color/white"
+        android:elevation="0dp"
+        app:titleTextAppearance="@style/action_title"
+        tools:ignore="MissingConstraints"
+        app:menu="@menu/menu_main"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/sea"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorFullWidth="true"
+        app:tabIndicatorGravity="bottom"
+        app:tabIndicator="@drawable/textbox_outline"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/tab_text"
+        app:tabTextColor="#6C6B6B"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CHATS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="STATUS" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CALLS" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/edit_Tab"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/fab_Tab"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="27dp"
+        android:background="@drawable/rectangle_bg"
+        android:backgroundTint="@color/seaMist"
+        android:src="@drawable/edit_icon"
+        app:tint="@color/sea"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/fab_Tab"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="14dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rectangle_bg"
+        android:importantForAccessibility="no"
+        android:src="@drawable/chat_new_img"
+        app:backgroundTint="@color/sea"
+        app:tint="@color/white" />
+
+    <ImageButton
+        android:id="@+id/chatbot"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_bg"
+        android:importantForAccessibility="no"
+        android:src="@drawable/chatbot_img"
+        app:backgroundTint="@color/sea" />
+
+</RelativeLayout>

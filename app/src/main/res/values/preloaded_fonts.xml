@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aldrich</item>
+        <item>@font/cantarell_bold</item>
+        <item>@font/convergence</item>
+        <item>@font/cousine_bold</item>
+        <item>@font/doppio_one</item>
+        <item>@font/exo_2_medium</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/lexend_deca</item>
+        <item>@font/lexend_exa</item>
+    </array>
+</resources>

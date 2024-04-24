@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:background="@color/white"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.auth.PhoneNumberActivity">
+
+<ImageView
+    android:id="@+id/mailBox"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_250sdp"
+    android:layout_marginTop="@dimen/_35sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/mail_box_img"
+    tools:ignore="ContentDescription" />
+
+<TextView
+    android:id="@+id/otpVerification"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:fontFamily="@font/lexend_exa"
+    android:text="@string/otpVerification"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_20ssp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/mailBox"
+    app:layout_constraintStart_toStartOf="@+id/mailBox"
+    app:layout_constraintTop_toBottomOf="@+id/mailBox" />
+
+<LinearLayout
+    android:id="@+id/linearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_18sdp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="@+id/otpVerification"
+    app:layout_constraintStart_toStartOf="@+id/otpVerification"
+    app:layout_constraintTop_toBottomOf="@+id/otpVerification">
+
+    <TextView
+        android:id="@+id/otpCommand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/otpCommand1"
+        android:textColor="@color/spicyPink"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/otpCommand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/otpCommand2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/otpCommand3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:fontFamily="@font/lexend_deca"
+    android:text="@string/otpCommand3"
+    android:textColor="@color/spicyPink"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+    app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+<TextView
+    android:id="@+id/mobileNumberRequestText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_25sdp"
+    android:fontFamily="@font/lexend_exa"
+    android:gravity="center"
+    android:text="@string/mobileNumberRequestText"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_16ssp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/otpCommand3"
+    app:layout_constraintStart_toStartOf="@+id/otpCommand3"
+    app:layout_constraintTop_toBottomOf="@+id/otpCommand3" />
+
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_25sdp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/mobileNumberRequestText"
+    tools:ignore="MissingConstraints">
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/cpp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/textbox_outline"
+        android:padding="@dimen/_7sdp"
+        app:ccpDialog_showFlag="true"
+        app:ccpDialog_showNameCode="true"
+        app:ccpDialog_showPhoneCode="true"
+        app:ccp_showArrow="true"
+        app:ccp_showNameCode="false"
+        app:ccp_showPhoneCode="false" />
+
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/textbox_outline"
+        android:fontFamily="monospace"
+        android:hint="@string/mobileNumberFormat"
+        android:inputType="phone"
+        android:padding="@dimen/_10sdp"
+        android:phoneNumber="true"
+        android:maxLength="13"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/spicyPink"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/generateOTP"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_48sdp"
+    android:layout_marginBottom="@dimen/_38sdp"
+    android:backgroundTint="@color/sea"
+    android:fontFamily="@font/lexend_exa"
+    android:text="@string/generateOTP"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_16ssp"
+    android:textStyle="bold"
+    app:cornerRadius="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

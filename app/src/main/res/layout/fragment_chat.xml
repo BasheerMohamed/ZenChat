@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.ChatsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invite your friends"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="@color/sea"
+            android:textStyle="bold"
+            android:fontFamily="@font/lexend_deca"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="None of your contacts are using Zenchat. \n Use the below button to invite them."
+            android:textColor="@color/black"
+            android:fontFamily="@font/lexend_exa"/>
+
+        <Button
+            android:id="@+id/invite"
+            android:layout_width="@dimen/_265sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginBottom="@dimen/_38sdp"
+            android:backgroundTint="@color/sea"
+            android:fontFamily="@font/lexend_exa"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Invite a friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/sea" />
+
+
+</FrameLayout>

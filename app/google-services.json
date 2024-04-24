@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65122620592",
+    "project_id": "whatsapp-clone-a58de",
+    "storage_bucket": "whatsapp-clone-a58de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65122620592:android:fa42185ec093a4461f1775",
+        "android_client_info": {
+          "package_name": "com.basheer.whatsappclone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVLxpuUhgNoCjfdzyuC-qmQB9MSoR4dCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

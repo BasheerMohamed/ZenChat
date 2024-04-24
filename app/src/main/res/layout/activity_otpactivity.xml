@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:background="@color/white"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.auth.OTPActivity">
+
+<ImageView
+    android:id="@+id/mailBox"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_250sdp"
+    android:layout_marginTop="@dimen/_35sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/mail_box_img"
+    tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/otpVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lexend_exa"
+        android:text="@string/otpVerification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/mailBox"
+        app:layout_constraintStart_toStartOf="@+id/mailBox"
+        app:layout_constraintTop_toBottomOf="@+id/mailBox" />
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_18sdp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="@+id/otpVerification"
+    app:layout_constraintStart_toStartOf="@+id/otpVerification"
+    app:layout_constraintTop_toBottomOf="@+id/otpVerification">
+
+    <TextView
+        android:id="@+id/otpCommand4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_deca"
+        android:text="@string/otpCommand4"
+        android:textColor="@color/spicyPink"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mobileNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:fontFamily="@font/lexend_exa"
+        android:text="@string/sampleMobileNumber"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+<com.mukeshsolanki.OtpView
+    android:id="@+id/otpview"
+    android:layout_width="@dimen/_270sdp"
+    android:layout_height="@dimen/_48sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:backgroundTint="@color/offGreen"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:fontFamily="monospace"
+    android:inputType="number"
+    android:itemBackground="@color/seaMist"
+    android:padding="@dimen/_5sdp"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_18ssp"
+    app:OtpHideLineWhenFilled="true"
+    app:OtpItemCount="6"
+    app:OtpItemHeight="@dimen/_40sdp"
+    app:OtpItemSpacing="@dimen/_7sdp"
+    app:OtpItemWidth="@dimen/_38sdp"
+    app:OtpLineColor="@color/sea"
+    app:OtpLineWidth="@dimen/_4sdp"
+    app:OtpMaskingChar="*"
+    app:OtpState_filled="true"
+    app:OtpViewType="line"
+    app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+    app:layout_constraintStart_toStartOf="@+id/linearLayout"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+<TextView
+    android:id="@+id/receiveOTP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:fontFamily="@font/convergence"
+    android:text="@string/receiveOTP"
+    android:textColor="@color/spicyPink"
+    android:textSize="@dimen/_15ssp"
+    tools:ignore="MissingConstraints"
+    app:layout_constraintEnd_toEndOf="@+id/otpview"
+    app:layout_constraintStart_toStartOf="@+id/otpview"
+    app:layout_constraintTop_toBottomOf="@+id/otpview" />
+
+<TextView
+    android:id="@+id/resendOTP"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:fontFamily="@font/lexend_deca"
+    android:text="@string/resendOTP"
+    android:textColor="@color/sea"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="@+id/receiveOTP"
+    app:layout_constraintStart_toStartOf="@+id/receiveOTP"
+    app:layout_constraintTop_toBottomOf="@+id/receiveOTP" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_38sdp"
+        android:backgroundTint="@color/sea"
+        android:fontFamily="@font/lexend_exa"
+        android:text="@string/verify"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

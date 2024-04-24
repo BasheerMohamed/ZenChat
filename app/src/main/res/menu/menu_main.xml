@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/camera"
+            android:icon="@drawable/camera_line_icon"
+            android:title="@string/search"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search_line"
+            android:title="@string/search"
+            app:showAsAction="always" />
+
+        <group android:id="@+id/action_more" android:menuCategory="container">
+
+        <item
+            android:id="@+id/action_new_group"
+            android:title="@string/new_group"/>
+
+        <item
+            android:id="@+id/action_new_broadcast"
+            android:title="@string/new_broadcast"/>
+
+        <item
+            android:id="@+id/action_linked_devices"
+            android:title="@string/linked_devices"/>
+
+        <item
+            android:id="@+id/action_starred_messages"
+            android:title="@string/starred_messages"/>
+
+        <item
+            android:id="@+id/action_payments"
+            android:title="@string/payments"/>
+
+        <item
+            android:id="@+id/action_settings"
+            android:title="@string/settings"/>
+
+        </group>
+
+</menu>
