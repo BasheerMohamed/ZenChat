@@ -47,6 +47,6 @@ they bring something new to the table.
 
 ![UserProfile](https://github.com/BasheerMohamed/ZenChat/assets/143797410/df9641b9-a78f-448c-93fb-beef564d0222)
 
-![AdminProfile](https://github.com/BasheerMohamed/ZenChat/assets/143797410/a576d181-5704-47cf-9f11-0ade00f586cb)
+![AdminProfile](https://github.com/BasheerMohamed/ZenChat/assets/143797410/0f8bcfa2-d26c-45ea-82db-dbfc4c029b92)
 
 ![ChatBot](https://github.com/BasheerMohamed/ZenChat/assets/143797410/78949133-0e2e-4a06-b691-8297a3132553)
